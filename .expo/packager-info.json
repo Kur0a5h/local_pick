@@ -1,3 +1,9 @@
 {
-  "devToolsPort": 19002
+  "devToolsPort": 19002,
+  "expoServerPort": 19000,
+  "packagerPort": 19001,
+  "packagerPid": 11807,
+  "expoServerNgrokUrl": "https://ea-xc2.anonymous.local-pick.exp.direct",
+  "packagerNgrokUrl": "https://packager.ea-xc2.anonymous.local-pick.exp.direct",
+  "ngrokPid": 11878
 }
