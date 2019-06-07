@@ -1,8 +1,10 @@
 import React from 'react';
 import { Platform, StatusBar,Text, StyleSheet, View } from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
-import { f, auth, database } from './config/firebase_config';
+import { f, auth, database } from '../config/firebase_config';
 // import AppNavigator from './navigation/AppNavigator';
+
+import MenuButton from '../components/MenuButton';
 
 export default class ProfileScreen extends React.Component {
   constructor(props)
@@ -19,12 +21,13 @@ export default class ProfileScreen extends React.Component {
     console.log(email, password);
     auth.createUserWithEmailAndPassword(email, password)
     .then((user) => console.log(email, password, userObject))
-    .catch((error) => console.log('error loggoing in:', error));
+    .catch((error) => console.log('error logging in:', error));
   }
 
   render() {
     return(
       <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+        <MenuButton navigation={this.props.navigation}/>
         <Text>Profile</Text>
       </View>
     )

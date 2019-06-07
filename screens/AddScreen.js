@@ -1,8 +1,11 @@
 import React from 'react';
 import { Platform, StatusBar,Text, StyleSheet, View } from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
-import { f, auth, database } from './config/firebase_config';
+import { f, auth, database } from '../config/firebase_config';
 // import AppNavigator from './navigation/AppNavigator';
+
+import MenuButton from '../components/MenuButton';
+
 
 export default class AddScreen extends React.Component {
   constructor(props)
@@ -25,6 +28,7 @@ export default class AddScreen extends React.Component {
   render() {
     return(
       <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+        <MenuButton navigation={this.props.navigation}/>
         <Text>Add Pick</Text>
       </View>
     )
