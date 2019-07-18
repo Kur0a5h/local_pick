@@ -22,7 +22,7 @@ const DrawerConfig = {
         }
     },
     contentComponent: ({ navigation }) => {
-        return(<MenuDrawer />)
+        return(<MenuDrawer navigation={navigation} />)
     }
 }
 

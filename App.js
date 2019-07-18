@@ -5,7 +5,7 @@ import { f, auth, database } from './config/firebase_config';
 // import AppNavigator from './navigation/AppNavigator';
 
 
-import SearchScreen from './screens/SearchScreen'
+import SearchScreen from './screens/SearchScreen';
 import DrawerNavigator from './navigation/DrawerNavigator';
 
 export default class App extends React.Component {
